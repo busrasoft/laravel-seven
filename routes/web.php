@@ -29,3 +29,5 @@ Route::get('/pizza', function(){
 
     return view('pizza');
 })->middleware('auth');
+
+Route::resource('products','ProductController');
